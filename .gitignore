@@ -1,0 +1,16 @@
+.DS_Store
+asset-admin/
+campaign-admin/
+cms/
+framework/
+graphql-devtools/
+graphql/
+index.php
+install-frameworkmissing.html
+reports/
+silverstripe-admin/
+silverstripe-assets/
+silverstripe-errorpage/
+siteconfig/
+vendor/
+versioned/

@@ -1,0 +1,30 @@
+{
+    "name": "silverstripe/installer",
+    "description": "The SilverStripe Framework Installer",
+    "require": {
+        "php": ">=5.6.0",
+        "silverstripe/admin": "1.0.0-beta1",
+        "silverstripe/asset-admin": "1.0.0-beta1",
+        "silverstripe/assets": "1.0.0-beta1",
+        "silverstripe/campaign-admin": "1.0.0-beta1",
+        "silverstripe/cms": "4.0.0-beta1",
+        "silverstripe/config": "1.0.0-beta1",
+        "silverstripe/errorpage": "1.0.0-beta1",
+        "silverstripe/framework": "4.0.0-beta1",
+        "silverstripe/graphql": "0.2.4@stable",
+        "silverstripe/reports": "4.0.0-beta1",
+        "silverstripe/siteconfig": "4.0.0-beta1",
+        "silverstripe/versioned": "1.0.0-beta1",
+        "silverstripe-themes/simple": "~3.2.0",
+        "silverstripe/graphql-devtools": "dev-master"
+    },
+    "require-dev": {
+        "phpunit/PHPUnit": "^5.7"
+    },
+    "extra": [],
+    "config": {
+        "process-timeout": 600
+    },
+    "prefer-stable": true,
+    "minimum-stability": "dev"
+}
