@@ -1,4 +1,6 @@
 .DS_Store
+logs
+
 asset-admin/
 campaign-admin/
 cms/
@@ -15,4 +17,5 @@ siteconfig/
 vendor/
 versioned/
 themes/simple/
+
 mymodule/node_modules/

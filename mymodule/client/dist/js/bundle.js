@@ -63,15 +63,14 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 1);
+/******/ 	return __webpack_require__(__webpack_require__.s = 2);
 /******/ })
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-"use strict";
-
+module.exports = React;
 
 /***/ }),
 /* 1 */
@@ -80,7 +79,72 @@
 "use strict";
 
 
-__webpack_require__(0);
+var _Injector = __webpack_require__(5);
+
+var _Injector2 = _interopRequireDefault(_Injector);
+
+var _CharacterCounter = __webpack_require__(3);
+
+var _CharacterCounter2 = _interopRequireDefault(_CharacterCounter);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+document.addEventListener('DOMContentLoaded', function () {
+  _Injector2.default.transform('character-count-transform', function (updater) {
+    updater.component('TextField', _CharacterCounter2.default, 'CharacterCounter');
+  });
+});
+
+/***/ }),
+/* 2 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+__webpack_require__(1);
+
+/***/ }),
+/* 3 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var CharacterCounter = function CharacterCounter(TextField) {
+  return function (props) {
+    return _react2.default.createElement(
+      'div',
+      null,
+      _react2.default.createElement(TextField, props),
+      _react2.default.createElement(
+        'small',
+        null,
+        'Character count: ',
+        props.value.length
+      )
+    );
+  };
+};
+
+exports.default = CharacterCounter;
+
+/***/ }),
+/* 4 */,
+/* 5 */
+/***/ (function(module, exports) {
+
+module.exports = Injector;
 
 /***/ })
 /******/ ]);
