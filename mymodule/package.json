@@ -4,9 +4,6 @@
   "description": "My Module",
   "main": "./client/src/boot/index.js",
   "author": "Andrew Nicholas",
-  "engines": {
-    "node": "^6.x"
-  },
   "scripts": {
     "build": "yarn && NODE_ENV=production webpack -p --bail --progress",
     "watch": "NODE_ENV=development webpack --watch --progress",
@@ -19,23 +16,9 @@
     "lint-js-fix": "eslint client/src --fix",
     "lint-sass": "sass-lint client/src -v"
   },
-  "jest": {
-    "roots": [
-      "client/src"
-    ],
-    "modulePaths": [
-      "client/src"
-    ],
-    "testMatch": [
-      "**/tests/**/*-test.js?(x)"
-    ],
-    "transform": {
-      ".*": "babel-jest"
-    }
-  },
   "devDependencies": {
     "@silverstripe/webpack-config": "^0.2.7"
-  },
+  }, 
   "babel": {
     "presets": [
       "es2015",
