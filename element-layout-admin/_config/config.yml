@@ -1,0 +1,7 @@
+---
+Name: element-layout-admin
+---
+SilverStripe\Admin\LeftAndMain:
+  extra_requirements_javascript:
+    # The name of this file will depend on how you've configured your build process
+    - 'element-layout-admin/client/dist/js/bundle.js'

@@ -2,6 +2,7 @@
 
 use SilverStripe\CMS\Model\SiteTree;
 use SilverStripe\Forms\TextField;
+use SilverStripe\ElementLayoutAdmin\Forms\ElementLayoutField;
 
 class Page extends SiteTree
 {
@@ -15,7 +16,7 @@ class Page extends SiteTree
     public function getCMSFields() {
 		$fields = parent::getCMSFields();
 
-		$fields->addFieldToTab('Root.Main', TextField::create('Name', 'Name'), 'Content');
+		$fields->addFieldToTab('Root.Main', ElementLayoutField::create('ElementLayout'), 'Content');
 
 		return $fields;
 	}

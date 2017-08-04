@@ -63,27 +63,21 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 2);
+/******/ 	return __webpack_require__(__webpack_require__.s = 1);
 /******/ })
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, exports) {
-
-module.exports = React;
-
-/***/ }),
-/* 1 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _Injector = __webpack_require__(5);
+var _Injector = __webpack_require__(3);
 
 var _Injector2 = _interopRequireDefault(_Injector);
 
-var _CharacterCounter = __webpack_require__(3);
+var _CharacterCounter = __webpack_require__(2);
 
 var _CharacterCounter2 = _interopRequireDefault(_CharacterCounter);
 
@@ -96,16 +90,16 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 /***/ }),
-/* 2 */
+/* 1 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-__webpack_require__(1);
+__webpack_require__(0);
 
 /***/ }),
-/* 3 */
+/* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -115,7 +109,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _react = __webpack_require__(0);
+var _react = __webpack_require__(4);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -140,11 +134,16 @@ var CharacterCounter = function CharacterCounter(TextField) {
 exports.default = CharacterCounter;
 
 /***/ }),
-/* 4 */,
-/* 5 */
+/* 3 */
 /***/ (function(module, exports) {
 
 module.exports = Injector;
+
+/***/ }),
+/* 4 */
+/***/ (function(module, exports) {
+
+module.exports = React;
 
 /***/ })
 /******/ ]);

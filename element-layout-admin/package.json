@@ -1,0 +1,32 @@
+{
+  "name": "element-layout-admin",
+  "version": "0.0.0",
+  "description": "ElementLayoutAdmin",
+  "main": "./client/src/boot/index.js",
+  "author": "Andrew Nicholas",
+  "scripts": {
+    "build": "yarn && NODE_ENV=production webpack -p --bail --progress",
+    "watch": "NODE_ENV=development webpack --watch --progress",
+    "css": "WEBPACK_CHILD=css npm run build",
+    "test": "jest",
+    "coverage": "jest --coverage",
+    "lock": "npm-shrinkwrap --dev",
+    "lint": "eslint client/src && sass-lint client/src -v",
+    "lint-js": "eslint client/src",
+    "lint-js-fix": "eslint client/src --fix",
+    "lint-sass": "sass-lint client/src -v"
+  },
+  "devDependencies": {
+    "@silverstripe/webpack-config": "^0.2.7"
+  }, 
+  "babel": {
+    "presets": [
+      "es2015",
+      "es2016",
+      "react"
+    ],
+    "plugins": [
+      "transform-object-rest-spread"
+    ]
+  }
+}
